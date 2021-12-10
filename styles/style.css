@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
+:root{
+    --pure-white:#fff;
+    --pure-black:#000;
+    --roboto-condensed:'Archivo', sans-serif;
+}
+
+*{
+    font-family:var(--roboto-condensed);
+    overflow-x: hidden;
+}
+
+#navbarNavAltMarkup > * :hover{
+    border-bottom: 1px solid var(--pure-black);
+}
+
+/* Index page */
+#login-btn, #logout-btn{
+    border-radius: 10px;
+    background-color:#043585;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+#login-btn:hover, #logout-btn:hover{
+    background-color: aqua;
+    color:var(--pure-black) !important;
+}
+
+.footer-heading{
+    font-size: 1.3rem;
+    color:darkgrey;
+}
+
+a{
+    color: var(--pure-white);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color:lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+
+/* Pricing page */
+#pricing-section{
+    margin:2rem 0;
+    line-height: 1.4rem;
+}
+
+@media screen and (max-width: 980px){
+    #person-card{
+        width: 50%;
+        margin: auto;
+    }
+}
+
+/* Register page */
+#login-now{
+    color: var(--pure-black);
+}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+    #login-btn{
+        width:150px;
+    }
+
+    #person-card{
+        width:75%;
+        margin:auto;
+    }
+}

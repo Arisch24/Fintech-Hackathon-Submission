@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
+*{
+    font-family: 'Archivo', sans-serif;
+    overflow-x:hidden;
+}
+
+.sidebar-items{
+    font-size: 1.1rem;
+}
+
+.nav-links{
+    color: white;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+.nav-links:hover{
+    text-decoration: none;
+    color:white;
+    border-bottom:1px solid white;
+}
+
+#sidebar{
+    display: flex;
+    position:fixed;
+    height: 100vh;
+    min-width: 215px;
+    max-width: 215px;
+    transition: all 0.4s ease-in;
+}
+
+#sidebar.unactive{
+    margin-left: -215px;
+    transition: margin-left 0.4s ease-out;
+}
+
+div.content{
+    margin-left: 200px;
+    padding: 2rem;
+    transition: all 0.4s ease-in;
+}
+
+#content.active{
+    margin-left: 0;
+    transition: margin-left 0.4s ease-out;
+}
