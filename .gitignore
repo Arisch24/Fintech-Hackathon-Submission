@@ -1,4 +1,4 @@
 # ignore key files
-API/HCK.p12
-API/file.crt.pem
-API/file.key.pem
+/HCK.p12
+/file.crt.pem
+/file.key.pem
